@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kalkulator BMI</title>
+  <script>
+    function policz() {
+      document.getElementById('bmi').innerText = document.getElementById('waga').value*document.getElementById('waga').value/document.getElementById('wzrost').value;
+    }
+  </script>
+</head>
+<body>
+  <center>
+    <form action="javascript:policz()">
+      Podaj swój wzrost: <input type="number" id="wzrost"> [cm]<br>
+      Podaj swoją wagę: <input type="number" id="waga"> [kg]<br>
+      <input type="submit" value="Policz!">
+    </form>
+    <h1>Twoje bmi to: <b id="bmi">&lt;podaj swoje dane&gt;</b>.</h1>
+  </center>
+</body>
+</html>
